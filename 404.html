@@ -46,10 +46,11 @@
         nav ul{
           float: right;
           margin-right: 20px;
+          margin-top: 15px;
         }
         nav ul li{
           display: inline-block;
-          line-height: 65px;
+          line-height: 50px;
           margin: 0 5px;
         }
         nav ul li a{
@@ -144,6 +145,7 @@
           }
           #check:checked ~ ul{
             left:0;
+            
           }
         }
         @media all and (max-width: 1450px) and (min-width: 1200px){
@@ -167,14 +169,26 @@
           }
         }
         @media all and (max-width: 991px) and (min-width: 768px){
+          nav{
+            height: calc(7vh )
+          }
+          .checkbtn{
+            /* margin-top: -8px; */
+          }
           .sec{
             background-size: cover !important;
           }
           .logo{
-                margin-top: -10px !important;
+                /* margin-top: -10px !important; */
+            }
+            .container {
+                padding-top: 10vh;
             }
         }
         @media all and (max-width: 767px) and (min-width: 576px){
+          nav{
+            height: calc(10vh );
+          }
           .sec{
             background-position: left;
             height: calc(100vh );
@@ -198,14 +212,17 @@
         .p3{ font-size: 17px;
         font-weight: 400;
         }
-          .checkbtn,.logo{
+          /* .checkbtn,.logo{
             margin-top: -14px;
-          }
+          } */
           .btn-primary{
               margin: 20px;
           }
         }
-        @media all and (max-width: 575px) and (min-width: 359px){
+        @media all and (max-width: 575px) and (min-width: 360px){
+          nav{
+            height: calc(13vh );
+          }
           .sec{
             background-position: left;
             height: calc(80vh );
@@ -221,11 +238,17 @@
             text-align: center;   
             margin-top: 0px;
           }
+          .checkbtn{
+            margin-right: 18px;
+          }
         }
-        @media all and (max-width: 360px) and (min-width: 240px){
+        @media all and (max-width: 359px) and (min-width: 240px){
+          nav{
+            height: calc(16.6vh );
+          }
           .sec{
             background-position: left;
-            height: calc(100vh );
+            height: calc(97vh ) !important;
           }
           .logo {
             font-size: 22px;
@@ -255,13 +278,19 @@
         .p3{ font-size: 16px;
         font-weight: 400;
         }
-          .checkbtn,.logo{
-            margin-top: -14px;
+        .checkbtn{
+            margin-right: 14px;
           }
+          
           .btn-primary{
               margin: 20px;
           }
         }
+        /* @media all and (max-width: 239px){
+          nav {
+            height: calc(16.7vh ) !important;
+        }
+        } */
      </style>
  
 
